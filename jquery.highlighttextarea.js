@@ -156,10 +156,10 @@
 
         $.extend(this.settings, options);
         this.regParam = 'm';
-        if (this.settings.caseSensitive) {
+        if (!this.settings.caseSensitive) {
             this.regParam = "i" + this.regParam;
         }
-        if (this.settings.firstWord) {
+        if (!this.settings.firstWord) {
             this.regParam = "g" + this.regParam;
         }
 
