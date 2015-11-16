@@ -51,6 +51,7 @@
         caseSensitive: true,
         wordsOnly: false,
         resizable: false,
+        firstWord: false,
         id: '',
         debug: false
     };
@@ -154,7 +155,13 @@
         }
 
         $.extend(this.settings, options);
-        this.regParam = this.settings.caseSensitive ? 'gm' : 'gim';
+        this.regParam = 'm';
+        if (this.settings.caseSensitive) {
+            this.regParam = "i" + this.regParam;
+        }
+        if (this.settings.firstWord) {
+            this.regParam = "g" + this.regParam;
+        }
 
         if (!$.isEmptyObject(this.settings.words)) {
             this.settings.words = Utilities.cleanWords(this.settings.words, this.settings.color);
