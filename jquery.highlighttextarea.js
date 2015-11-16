@@ -71,7 +71,7 @@
         		that.spacer = '\\b';
         	}
         	
-        $.each(lines, function(line) {
+        $.each(lines, function(i, line) {
             var finalLine = line;
             $.each(that.settings.words, function(color, words) {
                 finalLine = finalLine.replace(
