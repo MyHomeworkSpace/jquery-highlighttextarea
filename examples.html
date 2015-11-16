@@ -6,6 +6,17 @@ title: Examples
 <section class="bs-docs-section">
   <h1 id="examples" class="page-header">Examples</h1>
 
+  <h3 id="firstWord">First occurence only</h3>
+  <div class="bs-example">
+    <textarea id="demo-firstWord" cols="50" rows="3">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at massa non erat convallis vulputate molestie nec dui. Donec auctor blandit nibh quis luctus. Donec tincidunt auctor consequat.</textarea>
+  </div>
+{% highlight javascript %}
+$('textarea').highlightTextarea({
+  words: ['Lorem', 'ipsum'],
+  firstWord: true
+});
+{% endhighlight %}>
+
   <h3 id="case">Case insensitive</h3>
   <div class="bs-example">
     <textarea id="demo-case" cols="50" rows="3">LoRem IPSUm dolOR sIt aMEt, cONseCTETUR AdIpiSCiNG eLiT. QuISqUE aT mAssA nOn ERaT cONVaLLIs VulpUTatE mOlestiE neC dui. DONEC aUCtOR BlaNDIt niBH QUIS LucTUs. DONEc tInciduNT auctOr coNsEquaT.</textarea>
@@ -105,6 +116,11 @@ $('textarea').highlightTextarea({
 <script src="https://rawgit.com/PlanHubMe/jquery-highlighttextarea/master/jquery.highlighttextarea.js"></script>
 
 <script>
+$('#demo-firstWord').highlightTextarea({
+  words: ['Lorem', 'ipsum'],
+  firstWord: true
+});
+
 $('#demo-case').highlightTextarea({
   words: ['lorem ipsum', 'VULPUTATE'],
   caseSensitive: false
