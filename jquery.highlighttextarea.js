@@ -79,6 +79,13 @@
                     '<mark style="background-color:'+ color +';color:white;">$1</mark>'
                 );
             });
+            var replaced = (line != finalLine);
+            if (!replaced) {
+                finalLine = finalLine.replace(
+                    new RegExp(^[\w]+, that.regParam),
+                    '<mark style="background-color:#FFD3BD;color:black;">$1</mark>'
+                );
+            }
             finalLines.push(finalLine);
         });
         
