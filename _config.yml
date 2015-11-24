@@ -35,20 +35,20 @@ githubButton:
 
 # twitter buttons
 twitter:
-  enabled: true
+  enabled: false
   via: mistic100
   hash:
   account:
 
 # facebook buttons
 facebook:
-  enabled: true
+  enabled: false
   profileUrl:
 
 # google analytics
-analytics:
-  account: UA-28192323-3
-  domain: mistic100.github.io
+#analytics:
+#  account: UA-28192323-3
+#  domain: mistic100.github.io
 
 
 # DON'T MODIFY
