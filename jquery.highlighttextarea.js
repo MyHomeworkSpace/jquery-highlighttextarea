@@ -75,7 +75,7 @@
             var finalLine = line;
             $.each(that.settings.words, function(color, words) {
                 finalLine = finalLine.replace(
-                    new RegExp(that.spacer+'('+ words.join('|') +')'+that.spacer, that.regParam),
+                    new RegExp(that.spacer+'('+ words.join('|') +')\s'+that.spacer, that.regParam),
                     '<mark style="background-color:'+ color +';color:white;">$1</mark>'
                 );
             });
