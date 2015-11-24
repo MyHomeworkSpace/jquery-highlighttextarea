@@ -76,7 +76,7 @@
             $.each(that.settings.words, function(color, words) {
                 finalLine = finalLine.replace(
                     new RegExp(that.spacer+'('+ words.join('|') +')'+that.spacer, that.regParam),
-                    '<mark style="background-color:'+ color +';color:white;" class="fade">$1</mark>'
+                    '<mark style="background-color:'+ color +';color:white;">$1</mark>'
                 );
             });
             finalLines.push(finalLine);
@@ -352,6 +352,12 @@
             'top': -this.$el.scrollTop(),
             'left': -this.$el.scrollLeft()
         });
+        
+        $("mark").each(function() {
+            if (!$(this).hasClass("fade")) {
+                $(this).addClass("fade");
+            }
+        })
     };
 
 
