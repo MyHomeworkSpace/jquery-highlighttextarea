@@ -11,16 +11,16 @@ licenseUrl: http://opensource.org/licenses/MIT
 # list of additional links on the right of the top menu
 headerLinks:
   - title: GitHub
-    url: https://github.com/mistic100/jquery-highlighttextarea
-  - title: StrangePlanet
-    url: http://www.strangeplanet.fr
+    url: https://github.com/PlanHubMe/jquery-highlighttextarea
+  - title: PlanHub
+    url: https://planhub.me
 
 # list if additional links on the footer
 footerLinks:
   - title: GitHub
-    url: https://github.com/mistic100/jquery-highlighttextarea
+    url: https://github.com/PlanHubMe/jquery-highlighttextarea
   - title: Issues
-    url: https://github.com/mistic100/jquery-highlighttextarea/issues?state=open
+    url: https://github.com/PlanHubMe/jquery-highlighttextarea/issues?state=open
 
 # header
 header:
@@ -30,7 +30,7 @@ header:
 
 # github button
 githubButton:
-  user: mistic100
+  user: PlanHub
   repo: jquery-highlighttextarea
 
 # twitter buttons
