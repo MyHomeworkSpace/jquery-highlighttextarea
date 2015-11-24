@@ -33,6 +33,15 @@
   color:transparent;
   margin:0;
   padding:0;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.highlightTextarea mark.fade {
+  line-height:inherit;
+  color:transparent;
+  margin:0;
+  padding:0;
+  opacity: 1;
 }
 .highlightTextarea textarea,
 .highlightTextarea input {
