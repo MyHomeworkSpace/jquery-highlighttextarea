@@ -17,6 +17,23 @@ $('textarea').highlightTextarea({
 });
 {% endhighlight %}
 
+  <h3 id="tagTest">Tag test</h3>
+  <div class="bs-example">
+    <textarea id="demo-tagTest" cols="50" rows="3">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at massa non erat convallis vulputate molestie nec dui. Donec auctor blandit nibh quis luctus. Donec tincidunt auctor consequat.</textarea>
+  </div>
+{% highlight javascript %}
+$('textarea').highlightTextarea({
+  words: [{
+    color: '#4c6c9b',
+    words: ['HW']
+  }, {
+    color: '#DC143C',
+    words: ['Test']
+  }],
+  firstWord: true
+});
+{% endhighlight %}
+
   <h3 id="case">Case insensitive</h3>
   <div class="bs-example">
     <textarea id="demo-case" cols="50" rows="3">LoRem IPSUm dolOR sIt aMEt, cONseCTETUR AdIpiSCiNG eLiT. QuISqUE aT mAssA nOn ERaT cONVaLLIs VulpUTatE mOlestiE neC dui. DONEC aUCtOR BlaNDIt niBH QUIS LucTUs. DONEc tInciduNT auctOr coNsEquaT.</textarea>
@@ -118,6 +135,17 @@ $('textarea').highlightTextarea({
 <script>
 $('#demo-firstWord').highlightTextarea({
   words: ['Lorem', 'ipsum'],
+  firstWord: true
+});
+
+$('#demo-tagTest').highlightTextarea({
+  words: [{
+    color: '#4c6c9b',
+    words: ['HW']
+  }, {
+    color: '#DC143C',
+    words: ['Test']
+  }],
   firstWord: true
 });
 
