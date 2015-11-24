@@ -23,11 +23,11 @@
   white-space:pre-wrap;
   word-wrap:break-word;
 }
-  .highlightTextarea.debug .highlightTextarea-highlighter {
-    color:#f00;
-    border:1px solid #f00;
-    margin:-1px;
-  }
+.highlightTextarea.debug .highlightTextarea-highlighter {
+  color:#f00;
+  border:1px solid #f00;
+  margin:-1px;
+}
 .highlightTextarea mark {
   line-height:inherit;
   color:transparent;
@@ -35,6 +35,7 @@
   padding:0;
   opacity: 0;
   transition: opacity 0.2s;
+  position: relative;
   z-index: 1;
 }
 .highlightTextarea mark.fade {
