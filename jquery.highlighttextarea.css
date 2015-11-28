@@ -30,7 +30,6 @@
 }
 .highlightTextarea mark {
   line-height:inherit;
-  color:transparent;
   margin:0;
   padding: 1px 1px 1px 0; /*0;*/
   opacity: 0;
@@ -40,7 +39,6 @@
 }
 .highlightTextarea mark.fade {
   line-height:inherit;
-  color:transparent;
   margin:0;
   padding:0;
   opacity: 1;
