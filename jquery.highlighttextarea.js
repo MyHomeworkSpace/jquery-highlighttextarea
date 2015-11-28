@@ -365,11 +365,14 @@
             'left': -this.$el.scrollLeft()
         });
         
+        this.$containerTop.html(this.$container.html());
+        this.$containerTop.attr("style", this.$container.attr("style"));
+        
         $("mark").each(function() {
             if (!$(this).hasClass("fade")) {
                 $(this).addClass("fade");
             }
-        })
+        });
     };
 
 
