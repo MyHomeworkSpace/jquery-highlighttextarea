@@ -24,7 +24,7 @@
 
         this.$main.prepend('<div class="highlightTextarea-container"><div class="highlightTextarea-highlighter"></div></div>');
         this.$main.prepend('<div class="highlightTextarea-container highlightTextarea-containerTop"><div class="highlightTextarea-highlighter"></div></div>');
-        this.$container = this.$main.children().first();
+        this.$container = this.$main.find(".highlightTextarea-container:not(.highlightTextarea-containerTop)");
         this.$containerTop = this.$main.find(".highlightTextarea-containerTop");
         this.$highlighter = this.$container.children();
 
@@ -301,8 +301,8 @@
             'background': 'none'
         });
         
-        this.$container.html(this.$containerTop.html());
-        this.$container.attr("style", this.$containerTop.attr("style"));
+        this.$containerTop.html(this.$container.html());
+        this.$containerTop.attr("style", this.$container.attr("style"));
     };
 
     /*
