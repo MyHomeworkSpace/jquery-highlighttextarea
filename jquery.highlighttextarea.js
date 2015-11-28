@@ -302,6 +302,7 @@
         });
         
         this.$containerTop.html(this.$container);
+        this.$containerTop.attr("style", this.$container.attr("style"));
     };
 
     /*
