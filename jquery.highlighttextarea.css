@@ -61,3 +61,11 @@
   bottom:15px;
   right:0px;
 }
+.highlight {
+  background-color: #ff0;
+  color: black;
+}
+.highlight-alt {
+  background-color: #adf0ff;
+  color: black;
+}
