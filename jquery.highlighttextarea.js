@@ -47,7 +47,7 @@
     Highlighter.DEFAULTS = {
         words: {},
         ranges: {},
-        color: 'highlight',
+        color: 'text-highlight',
         caseSensitive: true,
         wordsOnly: false,
         resizable: false,
