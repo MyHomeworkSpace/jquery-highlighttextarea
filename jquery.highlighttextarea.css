@@ -61,11 +61,11 @@
   bottom:15px;
   right:0px;
 }
-.highlight {
+.text-highlight {
   background-color: #ff0;
   color: black;
 }
-.highlight-alt {
+.text-highlight-alt {
   background-color: #adf0ff;
   color: black;
 }
