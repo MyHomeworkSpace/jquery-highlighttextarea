@@ -67,3 +67,10 @@
   background-color: #adf0ff;
   color: black;
 }
+
+.highlightTextarea-containerTop mark {
+  background-color: transparent !important;
+}
+.highlightTextarea-container mark {
+  color: transparent !important;
+}
