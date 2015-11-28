@@ -75,7 +75,12 @@
   color: transparent !important;
 }
 
-.highlightTextare-containerTop {
+.highlightTextarea-container:not(.highlightTextarea-containerTop) {
+  z-index: -1;
+}
+
+.highlightTextarea-containerTop {
   z-index: 2;
   background: transparent !important;
+  pointer-events: none;
 }
