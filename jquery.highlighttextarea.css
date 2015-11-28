@@ -71,6 +71,6 @@
 .highlightTextarea-containerTop mark {
   background-color: transparent !important;
 }
-.highlightTextarea-container mark {
+.highlightTextarea-container:not(.highlightTextarea-containerTop) mark {
   color: transparent !important;
 }
