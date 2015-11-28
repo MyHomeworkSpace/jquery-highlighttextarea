@@ -23,7 +23,9 @@
         this.$main = this.$el.parent();
 
         this.$main.prepend('<div class="highlightTextarea-container"><div class="highlightTextarea-highlighter"></div></div>');
+        this.$main.prepend('<div class="highlightTextarea-container highlightTextarea-containerTop"><div class="highlightTextarea-highlighter"></div></div>');
         this.$container = this.$main.children().first();
+        this.$containerTop = this.$main.find(".highlightTextarea-containerTop");
         this.$highlighter = this.$container.children();
 
         this.setOptions(options);
