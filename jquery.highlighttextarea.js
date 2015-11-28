@@ -301,8 +301,8 @@
             'background': 'none'
         });
         
-        this.$containerTop.html(this.$container);
-        this.$containerTop.attr("style", this.$container.attr("style"));
+        this.$container.html(this.$containerTop.html());
+        this.$container.attr("style", this.$containerTop.attr("style"));
     };
 
     /*
