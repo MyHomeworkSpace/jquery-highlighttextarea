@@ -298,6 +298,8 @@
         this.$el.css({
             'background': 'none'
         });
+        
+        this.$containerTop.html(this.$container);
     };
 
     /*
